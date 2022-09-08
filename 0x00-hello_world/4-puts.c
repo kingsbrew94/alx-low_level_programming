@@ -1,8 +1,10 @@
 #include <stdio.h>
-/**
- * This code displays a message
- */
 
+/**
+ *main - Prints a string
+ *
+ * Return: Always 0 (Success)
+ */
 int main(void)
 
 {
