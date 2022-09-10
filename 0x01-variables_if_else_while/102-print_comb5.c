@@ -8,27 +8,30 @@
  */
 int main(void)
 {
-int mins;
-int secs;
-for (mins = 0; mins < 99; mins++)
+int m;
+int s;
+for (m = 0; m < 99; m++)
 {
-for (secs = mins + 1; secs < 100; secs++)
+for (s = m + 1; s < 100; s++)
 {
-if (mins < 10)
+if (m < 10)
 {
-putchar('0');
+putchar(0 + '0');
 }
-putchar(mins + '0');
+putchar((m % 10) + '0');
 putchar(' ');
-if (secs < 10)
+if (s < 10)
 {
-putchar('0');
+putchar(0 + '0');
 }
-putchar(secs + '0');
-if (mins < 98)
+putchar((s % 10) + '0');
+if (m < 98)
+{
 putchar(',');
-
+putchar(' ');
 }
+}
+
 }
 putchar('\n');
 return (0);
