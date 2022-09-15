@@ -2,7 +2,8 @@
 #include <stdio.h>
 
 /**
- * positive_or_negative - prints results whether an input is positive or negative
+ * positive_or_negative - prints results whether an
+ * input is positive or negative
  * @n: The input that is checked
  */
 void positive_or_negative(int n)
