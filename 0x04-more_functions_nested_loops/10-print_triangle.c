@@ -6,9 +6,7 @@
   */
 void print_triangle(int sz)
 {
-int i;
-int j; 
-int k;
+int i, j, k;
 if (sz <= 0)
 {
 _putchar('\n');
