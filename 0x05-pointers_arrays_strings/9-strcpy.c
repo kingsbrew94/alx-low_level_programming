@@ -2,7 +2,7 @@
 
 /**
  * _strcpy - Copies the string pointed to by @src
- * 
+ *
  * @dest: A buffer to copy the string to.
  * @src: The source string to copy.
  *
