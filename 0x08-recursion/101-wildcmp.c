@@ -64,7 +64,8 @@ return (postfix);
 }
 
 /**
- * wildcmp - Compares two strings and returns 1 if the strings can be considered identical,
+ * wildcmp - Compares two strings and returns
+ * 1 if the strings can be considered identical,
  * otherwise return 0
  * @s1: Holds the first string to be compared.
  * @s2: Holds the second string to be compared - may contain wildcards.
