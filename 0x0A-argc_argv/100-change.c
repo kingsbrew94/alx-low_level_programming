@@ -11,19 +11,29 @@
  */
 int main(int argc, char *argv[])
 {
-int num, digit, sum = 0;
-for (num = 1; num < argc; num++)
+int change[5] = {25, 10, 5, 2, 1};
+int count = 0;
+int i;
+int res = 0;
+if (argc != 2)
 {
-for (digit = 0; argv[num][digit]; digit++)
-{
-if (argv[num][digit] < '0' || argv[num][digit] > '9')
-{
-printf("Error\n");
+printf("Something wrong\n");
 return (1);
 }
+res = atoi(argv[1]);
+if (res <= 0)
+{
+printf("0\n");
+return (0);
 }
-sum += atoi(argv[num]);
+for (i = 0; i < 5; i++)
+{
+if (res >= change[i])
+{
+count = count + (res / change[i]);
+res = res % change[i];
 }
-printf("%d\n", sum);
+}
+printf("%d\n", count);
 return (0);
 }
