@@ -7,7 +7,7 @@
   * @argc: argument size
   * @argv: argument vector
   *
-  * Return: Always (0)
+  * Return: 1 else (0)
   */
 int main(int argc, char *argv[])
 {
